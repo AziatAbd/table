@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Инструкция по использованию таблицы "Рик и Морти"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Данная таблица представляет собой компонент, который отображает информацию о персонажах из сериала "Рик и Морти". В таблице отображаются идентификатор персонажа, полное имя, дата создания и изображение персонажа.
 
-## Available Scripts
+## Установка
 
-In the project directory, you can run:
+1. Убедитесь, что у вас установлен Node.js на вашем компьютере.
+2. Склонируйте репозиторий с кодом таблицы.
+3. В командной строке перейдите в директорию проекта.
+4. Установите зависимости, выполнив команду `npm install`.
 
-### `npm start`
+## Запуск
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+В командной строке выполните команду `npm start` для запуска приложения. После запуска приложения вы увидите таблицу со списком персонажей из сериала "Рик и Морти".
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Использование
 
-### `npm test`
+В таблице отображаются следующие столбцы:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **ID**: идентификаторы персонажей.
+- **Full name**: полные имена персонажей.
+- **Created**: дата создания персонажей.
+- **Character**: изображения персонажей. Если вы нажмете на изображение, откроется модальное окно с увеличенным изображением.
 
-### `npm run build`
+Вы можете изменить количество отображаемых строк на странице, выбрав опцию из выпадающего списка "Rows per page".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Дополнительные настройки
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Для внесения изменений в таблицу вы можете использовать следующие настройки:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **pageSizeOptions**: Массив, содержащий варианты количества отображаемых строк на странице.
+- **getRowHeight**: Функция, определяющая высоту строк таблицы.
+- **sx**: Объект стилей, определяющий внешний вид таблицы.
 
-### `npm run eject`
+## Зависимости
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Данная таблица использует следующие зависимости:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **@mui/x-data-grid**: Компонент таблицы.
+- **@mui/material**: Компоненты и стили Material-UI.
+- **moment**: Библиотека для работы с датами и временем.
+- **react**: Библиотека для создания пользовательских интерфейсов.
+- **react-dom**: Пакет для работы с DOM в React-приложениях.
+- **styled-components**: Библиотека для создания стилизованных компонентов.

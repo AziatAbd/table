@@ -1,6 +1,4 @@
 import { DataGrid } from "@mui/x-data-grid";
-import "./App.css";
-import { data } from "./common";
 import { Modal, Typography, styled } from "@mui/material";
 import moment from "moment";
 import { useEffect, useState } from "react";
